@@ -1,3 +1,7 @@
-num1 = int(input("Enter a number: "))
-num2 = int(input("Enter another number: "))
+numbers = []
 
+for i in range(2):
+    user_num = int(input("Enter a number: "))
+    numbers.append(user_num)
+
+numbers.sort()
