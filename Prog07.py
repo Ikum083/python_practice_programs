@@ -1,4 +1,5 @@
-numbers = 1
+number = 1
 for i in range(10):
-    numbers *= float(input("Enter a number: "))
+    number *= float(input("Enter a number: "))
 
+print(number)
