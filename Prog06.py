@@ -1,3 +1,4 @@
-numbers = ("Enter a number: ")
-numbers **= ("Raise the previous number to: ")
+numbers = float(input("Enter a number: "))
+power = float(input(("Raise the number to: ")))
 
+print(numbers ** power)
