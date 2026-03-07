@@ -5,3 +5,6 @@ while running_program:
     if number % 2 != 0:
         print(number)
     number += 1
+
+    if number == 100:
+        running_program = False
