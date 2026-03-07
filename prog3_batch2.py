@@ -1,2 +1,4 @@
-numbers = float(input("Enter a number: "))
-numbers -= float(input("Enter another number: "))
+number = float(input("Enter a number: "))
+number -= float(input("Enter another number: "))
+
+print(number)
