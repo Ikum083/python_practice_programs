@@ -11,11 +11,11 @@ for i in range(10):
 
 # another for loop to check if every element in the list has a duplicate
 for j in numbers:
+    # condition to remove the other iterations of said element
     if numbers.count(j) == 1:
         final_numbers.append(j)
     else:
         final_numbers.append(j)
         numbers.remove(j)
 
-print(final_numbers)
-# condition to remove the other iterations of said element
+print(*final_numbers)
