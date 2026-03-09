@@ -11,6 +11,9 @@ while asking_user:
     except ValueError:
         print("Invalid input!")
         asking_user = False
+
 # compute for average
+average = sum_user_input / input_quantity
 
 # print average
+print(f"Average: {average}")
