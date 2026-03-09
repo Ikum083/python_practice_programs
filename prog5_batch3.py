@@ -15,5 +15,7 @@ while asking_input:
         asking_input = False
 
 # divide the sum of all inputs and number of inputs
+average = input_sum / input_quantity
 
 # print result
+print(f"Your average: {average}")
