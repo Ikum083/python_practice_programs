@@ -10,5 +10,4 @@ for i in range(10):
 # condition to check for duplicates
 for j in numbers:
     if numbers.count(j) != 1:
-        # print duplicates
-        print(j, end = ",")
+        print(j, end = ",") # print duplicates
