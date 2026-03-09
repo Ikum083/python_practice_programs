@@ -14,5 +14,7 @@ while asking_user:
         asking_user = False
 
 # sort list from highest to lowest
+numbers.sort(reverse = True)
 
 # print every element from list
+print(*numbers)
