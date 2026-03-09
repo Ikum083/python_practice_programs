@@ -19,13 +19,16 @@ element_quantities = {}
 
 # for loop to check the count of every element in the list
 for i in numbers:
+    print(numbers)
     # store number with their respective quantity in the dicionary
     element_quantities[f"{i}"] = numbers.count(i)
-    # remove every iterarion of said element to avoid duplication
-    numbers = [x for x in numbers if x != i]
 
+print(element_quantities)
 # find the number with the largest amount of duplicates 
-most_duplicated_num = max(element_quantities, key = element_quantities.get)
+most_duplicated_num = max(element_quantities.values())
 
-# print element with the most duplicates based on dicitonary
-print(most_duplicated_num)
+# list to check every key value pair in the dictionary and checking if they of the largest number of duplicates
+largest_key_values = [j for j, k in element_quantities.items() if k == most_duplicated_num]
+
+# print every number with most duplicates
+print(*largest_key_values)
