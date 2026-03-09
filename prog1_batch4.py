@@ -8,3 +8,7 @@ for i in range(10):
     numbers.append(user_input)
 
 # condition to check for duplicates
+for j in numbers:
+    if numbers.count(j) != 1:
+        # print duplicates
+        print(j, end = ",")
