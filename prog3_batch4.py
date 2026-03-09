@@ -5,10 +5,15 @@ largest_num = 0
 
 # while loop to keep asking user for input
 while asking_user:
-    user_input = float(input("Enter a number: "))
-    if user_input >= largest_num:
-        largest_num = user_input
-    else:
-        continue
+    try:
+        user_input = float(input("Enter a number: "))
+        if user_input >= largest_num:
+            largest_num = user_input
+        else:
+            continue
+    except ValueError:
+        print("Invalid input!")
+        asking_user = False
 
 # print largest number
+print(f"The largest number is: {largest_num}")
