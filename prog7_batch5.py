@@ -3,4 +3,4 @@
 user_statement = str(input("Enter a full statement: "))
 
 # printf number of characters in said input
-print(f"{len(user_statement)}")
+print(f"{len(user_statement.split())}")
