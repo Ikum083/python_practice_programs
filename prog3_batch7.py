@@ -7,6 +7,15 @@ def all_caps(word_used):
     # list to contain every character in the sample word
     characters = [x for x in sample_word]
     # for loop to check for every character in the sample word
+    for i in range(len(characters)):
     ## conditions to capitalize every lower case character
+        if 'a' <= characters[i] <= 'z':
+            characters[i] = chr(ord(characters[i]) - 32)
+        else:
+            continue
+    # print new word
+    print(*characters, sep = '') 
 
-# print new word
+all_caps(sample_word)
+
+
