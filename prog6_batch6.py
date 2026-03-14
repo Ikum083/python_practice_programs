@@ -9,6 +9,7 @@ character_to_be_used = "_"
 def left_adjust(string_to_be_used, word_length, seperating_char):
     # list to contain every character in the string
     name_characters = []
+    
     for i in string_to_be_used:
         name_characters.append(i)
 
