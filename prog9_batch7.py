@@ -6,10 +6,18 @@ sample_string = "Hello World"
 desired_parameter = 'l'
 
 # function to mimick index()
-def find_index(words_used, char_parameter):
+def find_index(words_used, char_parameter) -> int:
 ## list that contains every char in string sample
     characters = [x for x in words_used]
 ## for loop to check for every char and breaks once it finds the first iteration of the desired char
-## print result
+    for i in range(len(characters)):
+        if characters[i] == char_parameter:
+            return i
+        else:
+            continue
 
 # call function
+parameter_index = find_index(sample_string, desired_parameter)
+
+# print result
+print(parameter_index)
