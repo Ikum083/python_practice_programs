@@ -3,7 +3,7 @@
 full_name = "Eugene Mabansag"
 
 # word to be checked
-end_word = "pdf"
+end_word = "Mabansag"
 
 # list to store the seperated words
 seperated_word = []
@@ -12,6 +12,8 @@ seperated_word = []
 seperated_word = full_name.split()
 
 # condition to check if the last string is the word to be checked
-
-# print result
-print(seperated_word)
+if seperated_word[-1] == end_word:
+    # print result
+    print("True")
+else:
+    print("False")
